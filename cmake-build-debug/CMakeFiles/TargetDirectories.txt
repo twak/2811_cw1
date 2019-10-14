@@ -1,3 +1,3 @@
 /home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles/lab1.dir
+/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles/cw1.dir
 /home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles/edit_cache.dir

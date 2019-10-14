@@ -6,9 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/home/twak/code/2811_cw1/card.cpp
-card.h
-/home/twak/code/2811_cw1/card.h
+/home/twak/code/2811_cw1/ResponsiveLabel.h
+QtGui/QLabel
+-
+QString
+-
+map
+-
+
+/home/twak/code/2811_cw1/ResponsiveLayout.cpp
+ResponsiveLayout.h
+/home/twak/code/2811_cw1/ResponsiveLayout.h
+ResponsiveLabel.h
+/home/twak/code/2811_cw1/ResponsiveLabel.h
 QList
 -
 QLayout
@@ -16,7 +26,7 @@ QLayout
 iostream
 -
 
-/home/twak/code/2811_cw1/card.h
+/home/twak/code/2811_cw1/ResponsiveLayout.h
 QtGui
 -
 QList
@@ -24,21 +34,21 @@ QList
 QLayout
 -
 
-/home/twak/code/2811_cw1/main.cpp
-algorithm
--
-vector
--
+/home/twak/code/2811_cw1/ResponsiveWindow.cpp
+ResponsiveWindow.h
+/home/twak/code/2811_cw1/ResponsiveWindow.h
+ResponsiveLayout.h
+/home/twak/code/2811_cw1/ResponsiveLayout.h
 iostream
 -
-QApplication
--
-QDebug
--
+
+/home/twak/code/2811_cw1/ResponsiveWindow.h
 QWidget
 -
-card.h
-/home/twak/code/2811_cw1/card.h
+ResponsiveLayout.h
+/home/twak/code/2811_cw1/ResponsiveLayout.h
+ResponsiveLabel.h
+/home/twak/code/2811_cw1/ResponsiveLabel.h
 
 /usr/include/qt4/Qt3Support/q3cstring.h
 QtCore/qbytearray.h
@@ -62,10 +72,6 @@ list
 qdatetime.h
 /usr/include/qt4/QtCore/qdatetime.h
 
-/usr/include/qt4/QtCore/QDebug
-qdebug.h
-/usr/include/qt4/QtCore/qdebug.h
-
 /usr/include/qt4/QtCore/QList
 qlist.h
 /usr/include/qt4/QtCore/qlist.h
@@ -81,6 +87,10 @@ qpoint.h
 /usr/include/qt4/QtCore/QPointF
 qpoint.h
 /usr/include/qt4/QtCore/qpoint.h
+
+/usr/include/qt4/QtCore/QString
+qstring.h
+/usr/include/qt4/QtCore/qstring.h
 
 /usr/include/qt4/QtCore/QtCore
 qalgorithms.h
@@ -1524,10 +1534,6 @@ QtCore/qvector.h
 QtCore/qscopedpointer.h
 -
 
-/usr/include/qt4/QtGui/QApplication
-qapplication.h
-/usr/include/qt4/QtGui/qapplication.h
-
 /usr/include/qt4/QtGui/QCleanlooksStyle
 qcleanlooksstyle.h
 /usr/include/qt4/QtGui/qcleanlooksstyle.h
@@ -1543,6 +1549,10 @@ qfiledialog.h
 /usr/include/qt4/QtGui/QFont
 qfont.h
 /usr/include/qt4/QtGui/qfont.h
+
+/usr/include/qt4/QtGui/QLabel
+qlabel.h
+/usr/include/qt4/QtGui/qlabel.h
 
 /usr/include/qt4/QtGui/QLayout
 qlayout.h

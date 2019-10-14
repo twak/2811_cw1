@@ -2,8 +2,8 @@
 // Created by twak on 14/10/2019.
 //
 
-#ifndef LAB1_RESPONSIVEWINDOW_H
-#define LAB1_RESPONSIVEWINDOW_H
+#ifndef RESPONSIVEWINDOW_H
+#define RESPONSIVEWINDOW_H
 
 #include <QWidget>
 #include "ResponsiveLayout.h"
@@ -21,4 +21,4 @@ protected:
 };
 
 
-#endif //LAB1_RESPONSIVEWINDOW_H
+#endif //RESPONSIVEWINDOW_H

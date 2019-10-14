@@ -57,47 +57,62 @@ include CMakeFiles/lab1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lab1.dir/flags.make
 
-CMakeFiles/lab1.dir/main.cpp.o: CMakeFiles/lab1.dir/flags.make
-CMakeFiles/lab1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab1.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab1.dir/main.cpp.o -c /home/twak/code/2811_cw1/main.cpp
+CMakeFiles/lab1.dir/ResponsiveLayout.cpp.o: CMakeFiles/lab1.dir/flags.make
+CMakeFiles/lab1.dir/ResponsiveLayout.cpp.o: ../ResponsiveLayout.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab1.dir/ResponsiveLayout.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab1.dir/ResponsiveLayout.cpp.o -c /home/twak/code/2811_cw1/ResponsiveLayout.cpp
 
-CMakeFiles/lab1.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab1.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/twak/code/2811_cw1/main.cpp > CMakeFiles/lab1.dir/main.cpp.i
+CMakeFiles/lab1.dir/ResponsiveLayout.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab1.dir/ResponsiveLayout.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/twak/code/2811_cw1/ResponsiveLayout.cpp > CMakeFiles/lab1.dir/ResponsiveLayout.cpp.i
 
-CMakeFiles/lab1.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab1.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/twak/code/2811_cw1/main.cpp -o CMakeFiles/lab1.dir/main.cpp.s
+CMakeFiles/lab1.dir/ResponsiveLayout.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab1.dir/ResponsiveLayout.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/twak/code/2811_cw1/ResponsiveLayout.cpp -o CMakeFiles/lab1.dir/ResponsiveLayout.cpp.s
 
-CMakeFiles/lab1.dir/card.cpp.o: CMakeFiles/lab1.dir/flags.make
-CMakeFiles/lab1.dir/card.cpp.o: ../card.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab1.dir/card.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab1.dir/card.cpp.o -c /home/twak/code/2811_cw1/card.cpp
+CMakeFiles/lab1.dir/ResponsiveLabel.cpp.o: CMakeFiles/lab1.dir/flags.make
+CMakeFiles/lab1.dir/ResponsiveLabel.cpp.o: ../ResponsiveLabel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/lab1.dir/ResponsiveLabel.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab1.dir/ResponsiveLabel.cpp.o -c /home/twak/code/2811_cw1/ResponsiveLabel.cpp
 
-CMakeFiles/lab1.dir/card.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab1.dir/card.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/twak/code/2811_cw1/card.cpp > CMakeFiles/lab1.dir/card.cpp.i
+CMakeFiles/lab1.dir/ResponsiveLabel.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab1.dir/ResponsiveLabel.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/twak/code/2811_cw1/ResponsiveLabel.cpp > CMakeFiles/lab1.dir/ResponsiveLabel.cpp.i
 
-CMakeFiles/lab1.dir/card.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab1.dir/card.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/twak/code/2811_cw1/card.cpp -o CMakeFiles/lab1.dir/card.cpp.s
+CMakeFiles/lab1.dir/ResponsiveLabel.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab1.dir/ResponsiveLabel.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/twak/code/2811_cw1/ResponsiveLabel.cpp -o CMakeFiles/lab1.dir/ResponsiveLabel.cpp.s
+
+CMakeFiles/lab1.dir/ResponsiveWindow.cpp.o: CMakeFiles/lab1.dir/flags.make
+CMakeFiles/lab1.dir/ResponsiveWindow.cpp.o: ../ResponsiveWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/lab1.dir/ResponsiveWindow.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/lab1.dir/ResponsiveWindow.cpp.o -c /home/twak/code/2811_cw1/ResponsiveWindow.cpp
+
+CMakeFiles/lab1.dir/ResponsiveWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lab1.dir/ResponsiveWindow.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/twak/code/2811_cw1/ResponsiveWindow.cpp > CMakeFiles/lab1.dir/ResponsiveWindow.cpp.i
+
+CMakeFiles/lab1.dir/ResponsiveWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lab1.dir/ResponsiveWindow.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/twak/code/2811_cw1/ResponsiveWindow.cpp -o CMakeFiles/lab1.dir/ResponsiveWindow.cpp.s
 
 # Object files for target lab1
 lab1_OBJECTS = \
-"CMakeFiles/lab1.dir/main.cpp.o" \
-"CMakeFiles/lab1.dir/card.cpp.o"
+"CMakeFiles/lab1.dir/ResponsiveLayout.cpp.o" \
+"CMakeFiles/lab1.dir/ResponsiveLabel.cpp.o" \
+"CMakeFiles/lab1.dir/ResponsiveWindow.cpp.o"
 
 # External object files for target lab1
 lab1_EXTERNAL_OBJECTS =
 
-lab1: CMakeFiles/lab1.dir/main.cpp.o
-lab1: CMakeFiles/lab1.dir/card.cpp.o
+lab1: CMakeFiles/lab1.dir/ResponsiveLayout.cpp.o
+lab1: CMakeFiles/lab1.dir/ResponsiveLabel.cpp.o
+lab1: CMakeFiles/lab1.dir/ResponsiveWindow.cpp.o
 lab1: CMakeFiles/lab1.dir/build.make
 lab1: /usr/lib/x86_64-linux-gnu/libQtGui.so
 lab1: /usr/lib/x86_64-linux-gnu/libQtCore.so
 lab1: CMakeFiles/lab1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable lab1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable lab1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lab1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

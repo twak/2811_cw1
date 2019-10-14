@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/lab1.dir/card.cpp.o"
-  "CMakeFiles/lab1.dir/main.cpp.o"
+  "CMakeFiles/lab1.dir/ResponsiveLabel.cpp.o"
+  "CMakeFiles/lab1.dir/ResponsiveLayout.cpp.o"
+  "CMakeFiles/lab1.dir/ResponsiveWindow.cpp.o"
   "lab1"
   "lab1.pdb"
 )

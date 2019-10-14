@@ -10,69 +10,64 @@
 #include <iostream>
 using namespace std;
 
-int ResponsiveLayout::count() const
-{
-    // QList::size() returns the number of QLayoutItems in the list
+void ResponsiveLayout::setGeometry(const QRect &r) {
+
+    QLayout::setGeometry(r);
+
+    // for all the Widgets added in responsiveWindow.cpp
+    for (int i = 0; i < list.size(); i++) {
+
+        QLayoutItem *o = list.at(i);
+
+        try {
+            // cast the widget to one of our responsive labels
+            ResponsiveLabel *label = dynamic_cast<ResponsiveLabel *>(o->widget());
+
+            if (label == NULL) // null: cast failed on pointer
+                cout << "warning, unknown widget class in layout" << endl;
+            // headers go at the top
+            else if (label -> text() == HEADER )
+                label -> setGeometry(0,0,r.width(), 40);
+            // only show a search button on small resolutions?!
+            else if (label -> text() == SEARCH_BUTTON && r.width() < 500)
+                label -> setGeometry(r.width() - 60,40,60, 40);
+            // otherwise: disappear label by moving out of bounds
+            else
+                label -> setGeometry (-1,-1,0,0);
+        }
+        catch (bad_cast) {
+            // bad_case: cast failed on reference...
+            cout << "warning, unknown widget class in layout" << endl;
+        }
+    }
+}
+
+// following methods provide a trivial implementation of the QLayout class
+int ResponsiveLayout::count() const {
     return list.size();
 }
 
-QLayoutItem *ResponsiveLayout::itemAt(int idx) const
-{
-    // QList::value() performs index checking, and returns 0 if we are
-    // outside the valid range
+QLayoutItem *ResponsiveLayout::itemAt(int idx) const {
     return list.value(idx);
 }
 
-QLayoutItem *ResponsiveLayout::takeAt(int idx)
-{
-    // QList::take does not do index checking
+QLayoutItem *ResponsiveLayout::takeAt(int idx) {
     return idx >= 0 && idx < list.size() ? list.takeAt(idx) : 0;
 }
 
-void ResponsiveLayout::addItem(QLayoutItem *item)
-{
+void ResponsiveLayout::addItem(QLayoutItem *item) {
     list.append(item);
 }
 
 QSize ResponsiveLayout::sizeHint() const {
     return minimumSize();
 }
-
 QSize ResponsiveLayout::minimumSize() const {
-    return QSize( 400, 400 );
+    return QSize(320,320);
 }
 
-ResponsiveLayout::~ResponsiveLayout()
-{
-    cout << "destroyed layout " << endl;
+ResponsiveLayout::~ResponsiveLayout() {
     QLayoutItem *item;
     while ((item = takeAt(0)))
         delete item;
-}
-
-void ResponsiveLayout::setGeometry(const QRect &r) {
-    QLayout::setGeometry(r);
-
-    for (int i = 0; i < list.size(); i++) {
-
-        QLayoutItem *o = list.at(i);
-
-        try {
-            ResponsiveLabel *label = dynamic_cast<ResponsiveLabel *>(o->widget());
-
-            if (label -> text() == HEADER )
-                label -> setGeometry(0,0,r.width(), 40);
-            else if (label -> text() == SEARCH_BUTTON && r.width() < 500)
-                label -> setGeometry(r.width() - 40,40,60, 40);
-            else
-                // default: disappear
-                label -> setGeometry (-1,-1,0,0);
-
-        }
-        catch (bad_cast) {
-            cout << "warning, unknown widget class in layout" << endl;
-        }
-
-        std::cout<<typeid(o).name()<<"  "<< quote(o) <<"\n";
-    }
 }

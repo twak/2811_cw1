@@ -2,8 +2,8 @@
 // Created by twak on 07/10/2019.
 //
 
-#ifndef CARD_H
-#define CARD_H
+#ifndef RESPONSIVELAYOUT_H
+#define RESPONSIVELAYOUT_H
 
 #include <QtGui>
 #include <QList>
@@ -12,9 +12,10 @@
 class ResponsiveLayout : public QLayout
 {
 public:
-    ResponsiveLayout(QWidget *parent, int dist): QLayout(parent) {}
     ResponsiveLayout(): QLayout() {}
     ~ResponsiveLayout();
+
+    void setGeometry(const QRect &rect);
 
     void addItem(QLayoutItem *item);
     QSize sizeHint() const;
@@ -22,9 +23,8 @@ public:
     int count() const;
     QLayoutItem *itemAt(int) const;
     QLayoutItem *takeAt(int);
-    void setGeometry(const QRect &rect);
 
 private:
     QList<QLayoutItem*> list;
 };
-#endif
+#endif // RESPONSIVELAYOUT_H

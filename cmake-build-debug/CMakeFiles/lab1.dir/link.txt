@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/lab1.dir/main.cpp.o CMakeFiles/lab1.dir/card.cpp.o  -o lab1 /usr/lib/x86_64-linux-gnu/libQtGui.so /usr/lib/x86_64-linux-gnu/libQtCore.so 
+/usr/bin/c++  -g   CMakeFiles/lab1.dir/ResponsiveLayout.cpp.o CMakeFiles/lab1.dir/ResponsiveLabel.cpp.o CMakeFiles/lab1.dir/ResponsiveWindow.cpp.o  -o lab1 /usr/lib/x86_64-linux-gnu/libQtGui.so /usr/lib/x86_64-linux-gnu/libQtCore.so 

@@ -111,71 +111,98 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab1
+# Target rules for targets named cw1
 
 # Build rule for target.
-lab1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 lab1
-.PHONY : lab1
+cw1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cw1
+.PHONY : cw1
 
 # fast build rule for target.
-lab1/fast:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/build
-.PHONY : lab1/fast
+cw1/fast:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/build
+.PHONY : cw1/fast
 
-card.o: card.cpp.o
+ResponsiveLabel.o: ResponsiveLabel.cpp.o
 
-.PHONY : card.o
-
-# target to build an object file
-card.cpp.o:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/card.cpp.o
-.PHONY : card.cpp.o
-
-card.i: card.cpp.i
-
-.PHONY : card.i
-
-# target to preprocess a source file
-card.cpp.i:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/card.cpp.i
-.PHONY : card.cpp.i
-
-card.s: card.cpp.s
-
-.PHONY : card.s
-
-# target to generate assembly for a file
-card.cpp.s:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/card.cpp.s
-.PHONY : card.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
+.PHONY : ResponsiveLabel.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/main.cpp.o
-.PHONY : main.cpp.o
+ResponsiveLabel.cpp.o:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLabel.cpp.o
+.PHONY : ResponsiveLabel.cpp.o
 
-main.i: main.cpp.i
+ResponsiveLabel.i: ResponsiveLabel.cpp.i
 
-.PHONY : main.i
+.PHONY : ResponsiveLabel.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/main.cpp.i
-.PHONY : main.cpp.i
+ResponsiveLabel.cpp.i:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLabel.cpp.i
+.PHONY : ResponsiveLabel.cpp.i
 
-main.s: main.cpp.s
+ResponsiveLabel.s: ResponsiveLabel.cpp.s
 
-.PHONY : main.s
+.PHONY : ResponsiveLabel.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/lab1.dir/build.make CMakeFiles/lab1.dir/main.cpp.s
-.PHONY : main.cpp.s
+ResponsiveLabel.cpp.s:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLabel.cpp.s
+.PHONY : ResponsiveLabel.cpp.s
+
+ResponsiveLayout.o: ResponsiveLayout.cpp.o
+
+.PHONY : ResponsiveLayout.o
+
+# target to build an object file
+ResponsiveLayout.cpp.o:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLayout.cpp.o
+.PHONY : ResponsiveLayout.cpp.o
+
+ResponsiveLayout.i: ResponsiveLayout.cpp.i
+
+.PHONY : ResponsiveLayout.i
+
+# target to preprocess a source file
+ResponsiveLayout.cpp.i:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLayout.cpp.i
+.PHONY : ResponsiveLayout.cpp.i
+
+ResponsiveLayout.s: ResponsiveLayout.cpp.s
+
+.PHONY : ResponsiveLayout.s
+
+# target to generate assembly for a file
+ResponsiveLayout.cpp.s:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLayout.cpp.s
+.PHONY : ResponsiveLayout.cpp.s
+
+ResponsiveWindow.o: ResponsiveWindow.cpp.o
+
+.PHONY : ResponsiveWindow.o
+
+# target to build an object file
+ResponsiveWindow.cpp.o:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveWindow.cpp.o
+.PHONY : ResponsiveWindow.cpp.o
+
+ResponsiveWindow.i: ResponsiveWindow.cpp.i
+
+.PHONY : ResponsiveWindow.i
+
+# target to preprocess a source file
+ResponsiveWindow.cpp.i:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveWindow.cpp.i
+.PHONY : ResponsiveWindow.cpp.i
+
+ResponsiveWindow.s: ResponsiveWindow.cpp.s
+
+.PHONY : ResponsiveWindow.s
+
+# target to generate assembly for a file
+ResponsiveWindow.cpp.s:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveWindow.cpp.s
+.PHONY : ResponsiveWindow.cpp.s
 
 # Help Target
 help:
@@ -184,14 +211,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... lab1"
+	@echo "... cw1"
 	@echo "... edit_cache"
-	@echo "... card.o"
-	@echo "... card.i"
-	@echo "... card.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... ResponsiveLabel.o"
+	@echo "... ResponsiveLabel.i"
+	@echo "... ResponsiveLabel.s"
+	@echo "... ResponsiveLayout.o"
+	@echo "... ResponsiveLayout.i"
+	@echo "... ResponsiveLayout.s"
+	@echo "... ResponsiveWindow.o"
+	@echo "... ResponsiveWindow.i"
+	@echo "... ResponsiveWindow.s"
 .PHONY : help
 
 

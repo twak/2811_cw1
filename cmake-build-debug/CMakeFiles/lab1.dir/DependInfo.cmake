@@ -4,8 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/twak/code/2811_cw1/card.cpp" "/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles/lab1.dir/card.cpp.o"
-  "/home/twak/code/2811_cw1/main.cpp" "/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles/lab1.dir/main.cpp.o"
+  "/home/twak/code/2811_cw1/ResponsiveLabel.cpp" "/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles/lab1.dir/ResponsiveLabel.cpp.o"
+  "/home/twak/code/2811_cw1/ResponsiveLayout.cpp" "/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles/lab1.dir/ResponsiveLayout.cpp.o"
+  "/home/twak/code/2811_cw1/ResponsiveWindow.cpp" "/home/twak/code/2811_cw1/cmake-build-debug/CMakeFiles/lab1.dir/ResponsiveWindow.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

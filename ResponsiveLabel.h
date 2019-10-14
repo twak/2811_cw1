@@ -2,8 +2,8 @@
 // Created by twak on 14/10/2019.
 //
 
-#ifndef LAB1_RESPONSIVELABEL_H
-#define LAB1_RESPONSIVELABEL_H
+#ifndef RESPONSIVELABEL_H
+#define RESPONSIVELABEL_H
 
 
 #include <QtGui/QLabel>
@@ -27,4 +27,4 @@ public:
 };
 
 
-#endif //LAB1_RESPONSIVELABEL_H
+#endif // RESPONSIVELABEL_H
