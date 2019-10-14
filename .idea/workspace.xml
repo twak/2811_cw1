@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="cw1" targetName="cw1" />
+      <config projectName="cw1" targetName="cw1_autogen" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -10,18 +13,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36d103cb-95cc-4ce1-bd4f-09fbcf9afa66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/responsive_window.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screenshot.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResponsiveLabel.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_label.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResponsiveLabel.h" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_label.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResponsiveLayout.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_layout.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResponsiveLayout.h" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_layout.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResponsiveWindow.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResponsiveWindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/CXX.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/DependInfo.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/build.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/cmake_clean.cmake" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/depend.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/flags.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/link.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/progress.make" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cw1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cw1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cw1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cw1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/responsive_window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_window.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/responsive_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_window.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -77,12 +90,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="cw1" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cw1" TARGET_NAME="cw1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cw1" RUN_TARGET_NAME="cw1">
+  <component name="RunManager" selected="CMake Application.cw1">
+    <configuration name="cw1" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="11" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cw1" TARGET_NAME="cw1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cw1" RUN_TARGET_NAME="cw1">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="cw1_autogen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cw1" TARGET_NAME="cw1_autogen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.cw1" />
+      <item itemvalue="CMake Application.cw1_autogen" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -94,7 +116,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571052848273</updated>
-      <workItem from="1571052849384" duration="14378000" />
+      <workItem from="1571052849384" duration="22362000" />
+      <workItem from="1571080678664" duration="903000" />
     </task>
     <task id="LOCAL-00001" summary="Getting there...">
       <created>1571063265681</created>
@@ -110,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571069186954</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="google style naming">
+      <created>1571072483683</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571072483683</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +151,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -131,6 +163,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Getting there..." />
-    <option name="LAST_COMMIT_MESSAGE" value="Getting there..." />
+    <MESSAGE value="google style naming" />
+    <option name="LAST_COMMIT_MESSAGE" value="google style naming" />
   </component>
 </project>

@@ -4,9 +4,11 @@
 
 #include "responsive_window.h"
 #include "responsive_layout.h"
+#include "screenshot.h"
 #include <iostream>
 
-responsive_window::responsive_window() {
+
+ResponsiveWindow::ResponsiveWindow() {
     setWindowTitle("2811: Coursework 1");
     setMinimumSize(320, 320);
 
@@ -14,7 +16,7 @@ responsive_window::responsive_window() {
     createWidgets();
 }
 
-void responsive_window::createWidgets() {
+void ResponsiveWindow::createWidgets() {
 
     // add all the widgets we need to demonstrate all layouts
     layout()->addWidget(new ResponsiveLabel(kHeader));
@@ -25,22 +27,6 @@ void responsive_window::createWidgets() {
     // note that later widgets are added on top of earlier widgets
 }
 
-int screenShot(QString fileName) {
-
-    auto active_window = qApp->activeWindow();
-    if (active_window) //could be null if your app doesn't have focus
-    {
-        QPixmap pixmap(active_window->size());
-        active_window->render(&pixmap);
-        QFile file(fileName);
-        file.open(QIODevice::WriteOnly);
-        pixmap.save(&file, "PNG");
-//        ui->label->setPixmap(pixmap);
-    }
-}
-
-QTimer* mTimer;
-
 int main(int argc, char *argv[]) {
 
     // let's just check that Qt is operational first
@@ -50,16 +36,17 @@ int main(int argc, char *argv[]) {
     QApplication app(argc, argv);
 
     // create a window. See respsonsive_window.cpp!
-    responsive_window window;
-    window.show();
+    if (argc-1)  {
+        Screenshot screenshot;
+        screenshot.show();
+        // wait for the app to terminate
+        return app.exec();
+    } else {
+        ResponsiveWindow window;
+        window.show();
+        // wait for the app to terminate
+        return app.exec();
+    }
 
-    mTimer = new QTimer(app);
-    mTimer->setSingleShot(true);
-    window.connect(mTimer, SIGNAL(timeout()), SLOT(screenShot("foo.png")));
-
-
-
-    // wait for the app to terminate
-    return app.exec();
 }
 

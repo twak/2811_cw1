@@ -36,6 +36,7 @@
 				<Compiler>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/twak/code/2811_cw1/cmake-build-debug/cw1_autogen/include"/>
 					<Add directory="/usr/include/qt4"/>
 					<Add directory="/usr/include/qt4/QtGui"/>
 					<Add directory="/usr/include/qt4/QtCore"/>
@@ -64,6 +65,7 @@
 				<Compiler>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add directory="/home/twak/code/2811_cw1/cmake-build-debug/cw1_autogen/include"/>
 					<Add directory="/usr/include/qt4"/>
 					<Add directory="/usr/include/qt4/QtGui"/>
 					<Add directory="/usr/include/qt4/QtCore"/>
@@ -93,23 +95,42 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/twak/code/2811_cw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="cw1_autogen">
+				<Option working_dir="/home/twak/code/2811_cw1/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/twak/code/2811_cw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 cw1_autogen"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/twak/code/2811_cw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/twak/code/2811_cw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/twak/code/2811_cw1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
-		<Unit filename="/home/twak/code/2811_cw1/responsiveLabel.cpp">
+		<Unit filename="/home/twak/code/2811_cw1/cmake-build-debug/cw1_autogen/mocs_compilation.cpp">
 			<Option target="cw1"/>
 		</Unit>
-		<Unit filename="/home/twak/code/2811_cw1/responsiveLabel.h">
+		<Unit filename="/home/twak/code/2811_cw1/responsive_label.cpp">
 			<Option target="cw1"/>
 		</Unit>
-		<Unit filename="/home/twak/code/2811_cw1/responsiveLayout.cpp">
+		<Unit filename="/home/twak/code/2811_cw1/responsive_label.h">
 			<Option target="cw1"/>
 		</Unit>
-		<Unit filename="/home/twak/code/2811_cw1/responsiveLayout.h">
+		<Unit filename="/home/twak/code/2811_cw1/responsive_layout.cpp">
 			<Option target="cw1"/>
 		</Unit>
-		<Unit filename="/home/twak/code/2811_cw1/responsiveWindow.cpp">
+		<Unit filename="/home/twak/code/2811_cw1/responsive_layout.h">
 			<Option target="cw1"/>
 		</Unit>
-		<Unit filename="/home/twak/code/2811_cw1/responsiveWindow.h">
+		<Unit filename="/home/twak/code/2811_cw1/responsive_window.cpp">
+			<Option target="cw1"/>
+		</Unit>
+		<Unit filename="/home/twak/code/2811_cw1/responsive_window.h">
+			<Option target="cw1"/>
+		</Unit>
+		<Unit filename="/home/twak/code/2811_cw1/screenshot.cpp">
+			<Option target="cw1"/>
+		</Unit>
+		<Unit filename="/home/twak/code/2811_cw1/screenshot.h">
 			<Option target="cw1"/>
 		</Unit>
 		<Unit filename="/home/twak/code/2811_cw1/CMakeLists.txt">

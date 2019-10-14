@@ -6,15 +6,13 @@
 #define RESPONSIVEWINDOW_H
 
 #include <QWidget>
-#include "responsive_layout.h"
-#include "responsive_label.h"
 
 using namespace std;
 
-class responsive_window: public QWidget
-{
+class ResponsiveWindow: public QWidget {
+
 public:
-    responsive_window();
+    ResponsiveWindow();
 
 protected:
     void createWidgets();
