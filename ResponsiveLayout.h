@@ -9,13 +9,12 @@
 #include <QList>
 #include <QLayout>
 
-class CardLayout : public QLayout
+class ResponsiveLayout : public QLayout
 {
 public:
-    CardLayout(QWidget *parent, int dist): QLayout(parent) {}
-//    CardLayout(QLayout *parent, int dist): QLayout(parent) {}
-    CardLayout(): QLayout() {}
-    ~CardLayout();
+    ResponsiveLayout(QWidget *parent, int dist): QLayout(parent) {}
+    ResponsiveLayout(): QLayout() {}
+    ~ResponsiveLayout();
 
     void addItem(QLayoutItem *item);
     QSize sizeHint() const;

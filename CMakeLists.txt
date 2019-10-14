@@ -5,6 +5,6 @@ set(CMAKE_CXX_STANDARD 14)
 find_package(Qt4 REQUIRED)
 
 include(${QT_USE_FILE})
-add_executable(lab1 main.cpp card.cpp card.h)
+add_executable(lab1 main.cpp ResponsiveLayout.cpp ResponsiveLayout.h ResponsiveLabel.cpp ResponsiveLabel.h ResponsiveWindow.cpp ResponsiveWindow.h)
 
 target_link_libraries(lab1 ${QT_LIBRARIES})
