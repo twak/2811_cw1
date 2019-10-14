@@ -3,9 +3,9 @@
 //
 
 #include <QFrame>
-#include "ResponsiveLabel.h"
+#include "responsive_label.h"
 
-ResponsiveLabel::ResponsiveLabel(QString name) : ResponsiveLabel(name, colours.at(name)) {
+ResponsiveLabel::ResponsiveLabel(QString name) : ResponsiveLabel(name, kColours.at(name)) {
 }
 
 ResponsiveLabel::ResponsiveLabel(QString name, QString colour) : QLabel() {

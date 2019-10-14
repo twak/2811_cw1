@@ -1,23 +1,22 @@
 //
 // Created by twak on 07/10/2019.
 //
-#define quote(x) #x
 
-#include "ResponsiveLayout.h"
-#include "ResponsiveLabel.h"
-#include <QList>
+#include "responsive_layout.h"
+#include "responsive_label.h"
 #include <QLayout>
 #include <iostream>
+
 using namespace std;
 
 void ResponsiveLayout::setGeometry(const QRect &r) {
 
     QLayout::setGeometry(r);
 
-    // for all the Widgets added in responsiveWindow.cpp
-    for (int i = 0; i < list.size(); i++) {
+    // for all the Widgets added in ResponsiveWindow.cpp
+    for (int i = 0; i < list_.size(); i++) {
 
-        QLayoutItem *o = list.at(i);
+        QLayoutItem *o = list_.at(i);
 
         try {
             // cast the widget to one of our responsive labels
@@ -26,11 +25,14 @@ void ResponsiveLayout::setGeometry(const QRect &r) {
             if (label == NULL) // null: cast failed on pointer
                 cout << "warning, unknown widget class in layout" << endl;
             // headers go at the top
-            else if (label -> text() == HEADER )
+            else if (label -> text() == kHeader )
                 label -> setGeometry(0,0,r.width(), 40);
-            // only show a search button on small resolutions?!
-            else if (label -> text() == SEARCH_BUTTON && r.width() < 500)
+            // only show a search button on small resolution, at the right of the window
+            else if (label -> text() == kSearchButton && r.width() < 500)
                 label -> setGeometry(r.width() - 60,40,60, 40);
+            // fixme: focus group did not like this behaviour for the search results.
+            else if (label -> text() == kSearchResult )
+                label -> setGeometry(rand() %(r.width()-60),rand() %(r.height()-100)+40, 60, 60);
             // otherwise: disappear label by moving out of bounds
             else
                 label -> setGeometry (-1,-1,0,0);
@@ -42,21 +44,21 @@ void ResponsiveLayout::setGeometry(const QRect &r) {
     }
 }
 
-// following methods provide a trivial implementation of the QLayout class
+// following methods provide a trivial list_-based implementation of the QLayout class
 int ResponsiveLayout::count() const {
-    return list.size();
+    return list_.size();
 }
 
 QLayoutItem *ResponsiveLayout::itemAt(int idx) const {
-    return list.value(idx);
+    return list_.value(idx);
 }
 
 QLayoutItem *ResponsiveLayout::takeAt(int idx) {
-    return idx >= 0 && idx < list.size() ? list.takeAt(idx) : 0;
+    return idx >= 0 && idx < list_.size() ? list_.takeAt(idx) : 0;
 }
 
 void ResponsiveLayout::addItem(QLayoutItem *item) {
-    list.append(item);
+    list_.append(item);
 }
 
 QSize ResponsiveLayout::sizeHint() const {

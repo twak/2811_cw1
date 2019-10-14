@@ -12,12 +12,15 @@
 
 using namespace std;
 
-const QString HEADER = "header",
-    SEARCH_BUTTON = "search";
+const QString
+        kHeader = "header",
+        kSearchResult = "result",
+        kSearchButton = "search";
 
-const map<QString, QString> colours = {
-        std::make_pair (HEADER, "#ddffff"),
-        std::make_pair ( SEARCH_BUTTON, "#ffddff")
+const map<QString, QString> kColours = {
+        std::make_pair (kHeader, "#ddffff" ),
+        std::make_pair (kSearchResult, "#ffffdd" ),
+        std::make_pair (kSearchButton, "#ffddff" )
     };
 
 class ResponsiveLabel : public QLabel {

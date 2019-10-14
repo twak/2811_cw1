@@ -25,6 +25,6 @@ public:
     QLayoutItem *takeAt(int);
 
 private:
-    QList<QLayoutItem*> list;
+    QList<QLayoutItem*> list_;
 };
 #endif // RESPONSIVELAYOUT_H

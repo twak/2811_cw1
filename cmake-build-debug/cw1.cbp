@@ -94,22 +94,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/twak/code/2811_cw1/ResponsiveLabel.cpp">
+		<Unit filename="/home/twak/code/2811_cw1/responsiveLabel.cpp">
 			<Option target="cw1"/>
 		</Unit>
-		<Unit filename="/home/twak/code/2811_cw1/ResponsiveLabel.h">
+		<Unit filename="/home/twak/code/2811_cw1/responsiveLabel.h">
 			<Option target="cw1"/>
 		</Unit>
-		<Unit filename="/home/twak/code/2811_cw1/ResponsiveLayout.cpp">
+		<Unit filename="/home/twak/code/2811_cw1/responsiveLayout.cpp">
 			<Option target="cw1"/>
 		</Unit>
-		<Unit filename="/home/twak/code/2811_cw1/ResponsiveLayout.h">
+		<Unit filename="/home/twak/code/2811_cw1/responsiveLayout.h">
 			<Option target="cw1"/>
 		</Unit>
-		<Unit filename="/home/twak/code/2811_cw1/ResponsiveWindow.cpp">
+		<Unit filename="/home/twak/code/2811_cw1/responsiveWindow.cpp">
 			<Option target="cw1"/>
 		</Unit>
-		<Unit filename="/home/twak/code/2811_cw1/ResponsiveWindow.h">
+		<Unit filename="/home/twak/code/2811_cw1/responsiveWindow.h">
 			<Option target="cw1"/>
 		</Unit>
 		<Unit filename="/home/twak/code/2811_cw1/CMakeLists.txt">

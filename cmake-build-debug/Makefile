@@ -123,86 +123,86 @@ cw1/fast:
 	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/build
 .PHONY : cw1/fast
 
-ResponsiveLabel.o: ResponsiveLabel.cpp.o
+responsiveLabel.o: responsiveLabel.cpp.o
 
-.PHONY : ResponsiveLabel.o
-
-# target to build an object file
-ResponsiveLabel.cpp.o:
-	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLabel.cpp.o
-.PHONY : ResponsiveLabel.cpp.o
-
-ResponsiveLabel.i: ResponsiveLabel.cpp.i
-
-.PHONY : ResponsiveLabel.i
-
-# target to preprocess a source file
-ResponsiveLabel.cpp.i:
-	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLabel.cpp.i
-.PHONY : ResponsiveLabel.cpp.i
-
-ResponsiveLabel.s: ResponsiveLabel.cpp.s
-
-.PHONY : ResponsiveLabel.s
-
-# target to generate assembly for a file
-ResponsiveLabel.cpp.s:
-	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLabel.cpp.s
-.PHONY : ResponsiveLabel.cpp.s
-
-ResponsiveLayout.o: ResponsiveLayout.cpp.o
-
-.PHONY : ResponsiveLayout.o
+.PHONY : responsiveLabel.o
 
 # target to build an object file
-ResponsiveLayout.cpp.o:
-	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLayout.cpp.o
-.PHONY : ResponsiveLayout.cpp.o
+responsiveLabel.cpp.o:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/responsiveLabel.cpp.o
+.PHONY : responsiveLabel.cpp.o
 
-ResponsiveLayout.i: ResponsiveLayout.cpp.i
+responsiveLabel.i: responsiveLabel.cpp.i
 
-.PHONY : ResponsiveLayout.i
+.PHONY : responsiveLabel.i
 
 # target to preprocess a source file
-ResponsiveLayout.cpp.i:
-	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLayout.cpp.i
-.PHONY : ResponsiveLayout.cpp.i
+responsiveLabel.cpp.i:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/responsiveLabel.cpp.i
+.PHONY : responsiveLabel.cpp.i
 
-ResponsiveLayout.s: ResponsiveLayout.cpp.s
+responsiveLabel.s: responsiveLabel.cpp.s
 
-.PHONY : ResponsiveLayout.s
+.PHONY : responsiveLabel.s
 
 # target to generate assembly for a file
-ResponsiveLayout.cpp.s:
-	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveLayout.cpp.s
-.PHONY : ResponsiveLayout.cpp.s
+responsiveLabel.cpp.s:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/responsiveLabel.cpp.s
+.PHONY : responsiveLabel.cpp.s
 
-ResponsiveWindow.o: ResponsiveWindow.cpp.o
+responsiveLayout.o: responsiveLayout.cpp.o
 
-.PHONY : ResponsiveWindow.o
+.PHONY : responsiveLayout.o
 
 # target to build an object file
-ResponsiveWindow.cpp.o:
-	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveWindow.cpp.o
-.PHONY : ResponsiveWindow.cpp.o
+responsiveLayout.cpp.o:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/responsiveLayout.cpp.o
+.PHONY : responsiveLayout.cpp.o
 
-ResponsiveWindow.i: ResponsiveWindow.cpp.i
+responsiveLayout.i: responsiveLayout.cpp.i
 
-.PHONY : ResponsiveWindow.i
+.PHONY : responsiveLayout.i
 
 # target to preprocess a source file
-ResponsiveWindow.cpp.i:
-	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveWindow.cpp.i
-.PHONY : ResponsiveWindow.cpp.i
+responsiveLayout.cpp.i:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/responsiveLayout.cpp.i
+.PHONY : responsiveLayout.cpp.i
 
-ResponsiveWindow.s: ResponsiveWindow.cpp.s
+responsiveLayout.s: responsiveLayout.cpp.s
 
-.PHONY : ResponsiveWindow.s
+.PHONY : responsiveLayout.s
 
 # target to generate assembly for a file
-ResponsiveWindow.cpp.s:
-	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/ResponsiveWindow.cpp.s
-.PHONY : ResponsiveWindow.cpp.s
+responsiveLayout.cpp.s:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/responsiveLayout.cpp.s
+.PHONY : responsiveLayout.cpp.s
+
+responsiveWindow.o: responsiveWindow.cpp.o
+
+.PHONY : responsiveWindow.o
+
+# target to build an object file
+responsiveWindow.cpp.o:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/responsiveWindow.cpp.o
+.PHONY : responsiveWindow.cpp.o
+
+responsiveWindow.i: responsiveWindow.cpp.i
+
+.PHONY : responsiveWindow.i
+
+# target to preprocess a source file
+responsiveWindow.cpp.i:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/responsiveWindow.cpp.i
+.PHONY : responsiveWindow.cpp.i
+
+responsiveWindow.s: responsiveWindow.cpp.s
+
+.PHONY : responsiveWindow.s
+
+# target to generate assembly for a file
+responsiveWindow.cpp.s:
+	$(MAKE) -f CMakeFiles/cw1.dir/build.make CMakeFiles/cw1.dir/responsiveWindow.cpp.s
+.PHONY : responsiveWindow.cpp.s
 
 # Help Target
 help:
@@ -213,15 +213,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... cw1"
 	@echo "... edit_cache"
-	@echo "... ResponsiveLabel.o"
-	@echo "... ResponsiveLabel.i"
-	@echo "... ResponsiveLabel.s"
-	@echo "... ResponsiveLayout.o"
-	@echo "... ResponsiveLayout.i"
-	@echo "... ResponsiveLayout.s"
-	@echo "... ResponsiveWindow.o"
-	@echo "... ResponsiveWindow.i"
-	@echo "... ResponsiveWindow.s"
+	@echo "... responsiveLabel.o"
+	@echo "... responsiveLabel.i"
+	@echo "... responsiveLabel.s"
+	@echo "... responsiveLayout.o"
+	@echo "... responsiveLayout.i"
+	@echo "... responsiveLayout.s"
+	@echo "... responsiveWindow.o"
+	@echo "... responsiveWindow.i"
+	@echo "... responsiveWindow.s"
 .PHONY : help
 
 
