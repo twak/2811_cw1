@@ -19,7 +19,7 @@ ResponsiveWindow::ResponsiveWindow() {
 void ResponsiveWindow::createWidgets() {
 
     // add all the widgets we need to demonstrate all layouts
-    layout()->addWidget(new ResponsiveLabel(kHeader));
+    layout()->addWidget(new ResponsiveLabel(kNavMenu));
     layout()->addWidget(new ResponsiveLabel(kSearchButton));
     // we might have more than one search results
     layout()->addWidget(new ResponsiveLabel(kSearchResult));

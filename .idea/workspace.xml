@@ -13,28 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36d103cb-95cc-4ce1-bd4f-09fbcf9afa66" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/screenshot.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshot.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/depend.internal" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/lab1.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/cw1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cw1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cw1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cw1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/responsive_label.h" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_label.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/responsive_layout.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_layout.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/responsive_window.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_window.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responsive_window.h" beforeDir="false" afterPath="$PROJECT_DIR$/responsive_window.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/screenshot.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -117,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571052848273</updated>
       <workItem from="1571052849384" duration="22362000" />
-      <workItem from="1571080678664" duration="903000" />
+      <workItem from="1571080678664" duration="4785000" />
     </task>
     <task id="LOCAL-00001" summary="Getting there...">
       <created>1571063265681</created>
@@ -140,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571072483683</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="google style naming">
+      <created>1571081599703</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1571081599703</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

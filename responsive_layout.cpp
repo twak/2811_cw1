@@ -25,7 +25,7 @@ void ResponsiveLayout::setGeometry(const QRect &r) {
             if (label == NULL) // null: cast failed on pointer
                 cout << "warning, unknown widget class in layout" << endl;
             // headers go at the top
-            else if (label -> text() == kHeader )
+            else if (label -> text() == kNavMenu )
                 label -> setGeometry(0,0,r.width(), 40);
             // only show a search button on small resolution, at the right of the window
             else if (label -> text() == kSearchButton && r.width() < 500)

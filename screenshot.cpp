@@ -44,11 +44,12 @@ void Screenshot::showEvent(QShowEvent *) {
     remaining.push_back(QSize(500,1050));
 
     ofstream html;
-    html.open("./index.html");
+    html.open("./index.html", fstream::in | fstream::out | fstream::app);
 
-    html << "<html><body><h1>2811 coursework report</h1>" << endl;
+    html << "<h4>responsive layouts:</h4>" << endl;
+
     for (QSize size : remaining)
-        html << "<p><img width = \"300px%\" src=\"" << "images/rendered" +  to_string ( size.width() ) + "x" + to_string ( size.height() ) +".png\"/><br/>" << size.width() << "x" << size.height() << "</p>" ;
+        html << "<p><img width = \"300px%\" src=\"" << "images/rendered" +  to_string ( size.width() ) + "x" + to_string ( size.height() ) +".png\"/><br/>" << size.width() << "x" << size.height() << "</p>" <<endl ;
 
     html << "</body></html>" << endl;
 
