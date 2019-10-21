@@ -11,9 +11,6 @@ endif()
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(GCC_COVERAGE_COMPILE_FLAGS "-Wall")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${GCC_COVERAGE_COMPILE_FLAGS}" )
-
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
 set(SOURCE_FILES responsive_layout.cpp responsive_layout.h responsive_label.cpp responsive_label.h responsive_window.cpp responsive_window.h screenshot.cpp screenshot.h)
