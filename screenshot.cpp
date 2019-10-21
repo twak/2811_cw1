@@ -6,12 +6,12 @@
 #include "screenshot.h"
 #include <sys/stat.h>
 #include <fstream>
-
+#include <QApplication>
 
 // assessment class. do not edit.
 void Screenshot::doScreenshot() {
 
-    auto active_window = qApp->activeWindow();
+    auto active_window = QApplication::activeWindow();
 
     // screen shot currently sized window
     if (active_window) {
@@ -20,7 +20,7 @@ void Screenshot::doScreenshot() {
 
         QSize &size = remaining.back();
 
-        string s = "./images/rendered" +  to_string ( size.width() ) + "x" + to_string ( size.height() ) +".png";
+        string s = "./report/images/rendered" +  to_string ( size.width() ) + "x" + to_string ( size.height() ) +".png";
         QFile file( QString::fromStdString(s));
 
         file.open(QIODevice::WriteOnly);
@@ -33,18 +33,32 @@ void Screenshot::doScreenshot() {
 // when we are shown for hte first time, set the screenshot sizes and call the scheduler
 void Screenshot::showEvent(QShowEvent *) {
 
-    mkdir("./images", S_IRWXU);
+    mkdir("./report", S_IRWXU);
+    mkdir("./report/images", S_IRWXU);
 
     remaining.push_back(QSize(300,300));
-    remaining.push_back(QSize(500,200));
-    remaining.push_back(QSize(200,500));
+
+    remaining.push_back(QSize(568,320));
+    remaining.push_back(QSize(320,568));
+
+    remaining.push_back(QSize(812,375));
+    remaining.push_back(QSize(375,812));
+
+    remaining.push_back(QSize(1024,1366));
+    remaining.push_back(QSize(1366,1024));
+
     remaining.push_back(QSize(1920,1050));
+    remaining.push_back(QSize(1200,1050));
+    remaining.push_back(QSize(700 ,1050));
+    remaining.push_back(QSize(500 ,1050));
+
     remaining.push_back(QSize(1920,300));
-    remaining.push_back(QSize(700,1050));
-    remaining.push_back(QSize(500,1050));
+    remaining.push_back(QSize(1920,800));
+
+
 
     ofstream html;
-    html.open("./index.html", fstream::in | fstream::out | fstream::app);
+    html.open("./report/index.html", fstream::in | fstream::out | fstream::app);
 
     html << "<h4>responsive layouts:</h4>" << endl;
 

@@ -6,19 +6,19 @@
 #define RESPONSIVELABEL_H
 
 
-#include <QtGui/QLabel>
+#include <QLabel>
 #include <QString>
 #include <map>
 
 using namespace std;
 
 const QString
-        kLogo = "logo",
+        kHomeLink = "home",
         kBackButton = "back",
         kShoppingBasket = "basket",
         kSignIn = "sign-in",
-        kNavMenu = "navigation menu",
-        kFooter = "footer",
+        kNavTabs = "navigation tabs",
+        kFooter = "fat footer",
         kAdvert = "advert",
         kSearchButton = "search",
         kSearchResult = "result",
@@ -28,11 +28,11 @@ const QString
         kSearchOptions = "search options";
 
 const map<QString, QString> kColours = {
-        make_pair(kLogo,           "#ffaaff"),
+        make_pair(kHomeLink,           "#ffaaff"),
         make_pair(kBackButton,     "#ffffaa"),
         make_pair(kShoppingBasket, "#ffaaaa"),
         make_pair(kSignIn,         "#aaffaa"),
-        make_pair(kNavMenu,        "#aaaaff"),
+        make_pair(kNavTabs,        "#aaaaff"),
         make_pair(kFooter,         "#66ffaa"),
         make_pair(kAdvert,         "#ffaa66"),
         make_pair(kSearchButton,   "#aaffff"),
