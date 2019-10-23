@@ -17,4 +17,4 @@ dir="$(pwd)"
 echo "$dir"
 parentzip="$(dirname $dir)/generate_$(whoami).zip"
 zip -r "$parentzip" .
-echo "submit $parentzip"
+echo "report written, src & output zipped: now submit $parentzip"

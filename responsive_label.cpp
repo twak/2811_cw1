@@ -10,7 +10,11 @@ ResponsiveLabel::ResponsiveLabel(QString name) : ResponsiveLabel(name, kColours.
 
 ResponsiveLabel::ResponsiveLabel(QString name, QString colour) : QLabel() {
     setText(name);
+//    setStyleSheet("margin-left: 10px;   background: white; color: #4A0C46;");
 
-    setStyleSheet("QLabel { border-width:1px; border-color:black; background-color : "+colour+"; color : black; }");
+    QColor qc (colour);
+    qc = qc.darker(150);
+
+    setStyleSheet("border: 1px solid "+ qc.name() +"; border-radius: 4px; background-color : "+colour+"; color : black;");
     setAlignment(Qt::AlignCenter);
 }

@@ -13,22 +13,22 @@
 using namespace std;
 
 const QString
-        kHomeLink = "home",
-        kBackButton = "back",
+        kHomeLink       = "home",
+        kBackButton     = "back",
         kShoppingBasket = "basket",
-        kSignIn = "sign-in",
-        kNavTabs = "navigation tabs",
-        kFooter = "fat footer",
-        kAdvert = "advert",
-        kSearchButton = "search",
-        kSearchResult = "result",
-        kSearchText = "search query",
-        kSearchForward = ">",
+        kSignIn         = "sign-in",
+        kNavTabs        = "navigation tabs",
+        kFooter         = "fat footer",
+        kAdvert         = "advert",
+        kSearchButton   = "search",
+        kSearchResult   = "result",
+        kSearchText     = "search query",
+        kSearchForward  = ">",
         kSearchBackward = "<",
-        kSearchOptions = "search options";
+        kSearchOptions  = "search options";
 
 const map<QString, QString> kColours = {
-        make_pair(kHomeLink,           "#ffaaff"),
+        make_pair(kHomeLink,       "#ffaaff"),
         make_pair(kBackButton,     "#ffffaa"),
         make_pair(kShoppingBasket, "#ffaaaa"),
         make_pair(kSignIn,         "#aaffaa"),

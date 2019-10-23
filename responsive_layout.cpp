@@ -9,7 +9,8 @@
 
 using namespace std;
 
-void ResponsiveLayout::setGeometry(const QRect &r) {
+// you should make extensive changes to this funciton
+void ResponsiveLayout::setGeometry(const QRect &r /* our layout should fit inside r */ ) {
 
     QLayout::setGeometry(r);
 
@@ -24,17 +25,15 @@ void ResponsiveLayout::setGeometry(const QRect &r) {
 
             if (label == NULL) // null: cast failed on pointer
                 cout << "warning, unknown widget class in layout" << endl;
-            // headers go at the top
-            else if (label -> text() == kNavTabs )
-                label -> setGeometry(0,0,r.width(), 40);
+            else if (label -> text() == kNavTabs ) // headers go at the top
+                label -> setGeometry(0+r.x(),0+r.y(),r.width(), 40);
             // only show a search button on small resolution, at the right of the window
             else if (label -> text() == kSearchButton && r.width() < 500)
-                label -> setGeometry(r.width() - 60,40,60, 40);
-            // fixme: focus group did not like this behaviour for the search results.
+                label -> setGeometry(r.width() - 65+r.x(),45+r.y(),60, 40);
+            // fixme: focus-group did not like this behaviour for the search result element.
             else if (label -> text() == kSearchResult )
-                label -> setGeometry(rand() %(r.width()-60),rand() %(r.height()-100)+40, 60, 60);
-            // otherwise: disappear label by moving out of bounds
-            else
+                label -> setGeometry(rand() %(r.width()-60)+r.x(),rand() %(r.height()-100)+40+r.y(), 60, 60);
+            else // otherwise: disappear label by moving out of bounds
                 label -> setGeometry (-1,-1,0,0);
         }
         catch (bad_cast) {
