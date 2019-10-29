@@ -15,6 +15,7 @@ public:
     ResponsiveLayout(): QLayout() {}
     ~ResponsiveLayout();
 
+    // standard functions for a QLayout
     void setGeometry(const QRect &rect);
 
     void addItem(QLayoutItem *item);

@@ -4,13 +4,12 @@
 
 #include "responsive_layout.h"
 #include "responsive_label.h"
-#include <QLayout>
 #include <iostream>
 
 using namespace std;
 
-// you should make extensive changes to this funciton
-void ResponsiveLayout::setGeometry(const QRect &r /* our layout should fit inside r */ ) {
+// you should probably make extensive changes to this function
+void ResponsiveLayout::setGeometry(const QRect &r /* our layout should always fit inside r */ ) {
 
     QLayout::setGeometry(r);
 
@@ -21,7 +20,7 @@ void ResponsiveLayout::setGeometry(const QRect &r /* our layout should fit insid
 
         try {
             // cast the widget to one of our responsive labels
-            ResponsiveLabel *label = dynamic_cast<ResponsiveLabel *>(o->widget());
+            ResponsiveLabel *label = static_cast<ResponsiveLabel *>(o->widget());
 
             if (label == NULL) // null: cast failed on pointer
                 cout << "warning, unknown widget class in layout" << endl;
@@ -43,7 +42,7 @@ void ResponsiveLayout::setGeometry(const QRect &r /* our layout should fit insid
     }
 }
 
-// following methods provide a trivial list_-based implementation of the QLayout class
+// following methods provide a trivial list-based implementation of the QLayout class
 int ResponsiveLayout::count() const {
     return list_.size();
 }
@@ -63,6 +62,7 @@ void ResponsiveLayout::addItem(QLayoutItem *item) {
 QSize ResponsiveLayout::sizeHint() const {
     return minimumSize();
 }
+
 QSize ResponsiveLayout::minimumSize() const {
     return QSize(320,320);
 }

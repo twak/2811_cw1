@@ -60,10 +60,10 @@ void Screenshot::showEvent(QShowEvent *) {
     ofstream html;
     html.open("./report/index.html", fstream::in | fstream::out | fstream::app);
 
-    html << "<h4>responsive layouts:</h4>" << endl;
+    html << "</pre><h4>responsive layouts:</h4>" << endl;
 
     for (QSize size : remaining)
-        html << "<p><img width = \"300px%\" src=\"" << "images/rendered" +  to_string ( size.width() ) + "x" + to_string ( size.height() ) +".png\"/><br/>" << size.width() << "x" << size.height() << "</p>" <<endl ;
+        html << "<p><img width = \"300px\" src=\"" << "images/rendered" +  to_string ( size.width() ) + "x" + to_string ( size.height() ) +".png\"/><br/>" << size.width() << "x" << size.height() << "</p>" <<endl ;
 
     html << "</body></html>" << endl;
 

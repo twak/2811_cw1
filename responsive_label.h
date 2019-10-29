@@ -12,6 +12,10 @@
 
 using namespace std;
 
+
+// Please add to, but DO NOT modify the constants in this file.
+
+// label names that are displayed
 const QString
         kHomeLink       = "home",
         kBackButton     = "back",
@@ -27,20 +31,21 @@ const QString
         kSearchBackward = "<",
         kSearchOptions  = "search options";
 
+// every label name has a colour
 const map<QString, QString> kColours = {
         make_pair(kHomeLink,       "#ffaaff"),
         make_pair(kBackButton,     "#ffffaa"),
         make_pair(kShoppingBasket, "#ffaaaa"),
         make_pair(kSignIn,         "#aaffaa"),
-        make_pair(kNavTabs,        "#aaaaff"),
+        make_pair(kNavTabs,        "#ffa9d3"),
         make_pair(kFooter,         "#66ffaa"),
         make_pair(kAdvert,         "#ffaa66"),
         make_pair(kSearchButton,   "#aaffff"),
-        make_pair(kSearchResult,   "#66ffff"),
-        make_pair(kSearchText,     "#33aaff"),
-        make_pair(kSearchForward,  "#aa66ff"),
-        make_pair(kSearchBackward, "#aa66ff"),
-        make_pair(kSearchOptions,  "#aaff66")
+        make_pair(kSearchResult,   "#99ddff"),
+        make_pair(kSearchText,     "#aaaaff"),
+        make_pair(kSearchForward,  "#5caeff"),
+        make_pair(kSearchBackward, "#5caeff"),
+        make_pair(kSearchOptions,  "#9dceff")
     };
 
 class ResponsiveLabel : public QLabel {
