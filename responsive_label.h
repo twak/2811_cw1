@@ -12,17 +12,13 @@
 
 using namespace std;
 
-
-// Please add to, but DO NOT modify the constants in this file.
-
+// Please add to, but DO NOT modify the existing constants in this file.
 // label names that are displayed
 const QString
         kHomeLink       = "home",
-        kBackButton     = "back",
         kShoppingBasket = "basket",
         kSignIn         = "sign-in",
         kNavTabs        = "navigation tabs",
-        kFooter         = "fat footer",
         kAdvert         = "advert",
         kSearchButton   = "search",
         kSearchResult   = "result",
@@ -34,11 +30,9 @@ const QString
 // every label name has a colour
 const map<QString, QString> kColours = {
         make_pair(kHomeLink,       "#ffaaff"),
-        make_pair(kBackButton,     "#ffffaa"),
         make_pair(kShoppingBasket, "#ffaaaa"),
         make_pair(kSignIn,         "#aaffaa"),
         make_pair(kNavTabs,        "#ffa9d3"),
-        make_pair(kFooter,         "#66ffaa"),
         make_pair(kAdvert,         "#ffaa66"),
         make_pair(kSearchButton,   "#aaffff"),
         make_pair(kSearchResult,   "#99ddff"),

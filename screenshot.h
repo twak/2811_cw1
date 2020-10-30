@@ -15,6 +15,9 @@
 class Screenshot : public ResponsiveWindow {
     Q_OBJECT
 
+public:
+    Screenshot(string srcLocation) : srcLocation(srcLocation) {};
+
 public slots:
     void doScreenshot();
 
@@ -23,6 +26,7 @@ private:
     void schedule();
     vector<QSize> remaining;
     QTimer* mTimer;
+    const string srcLocation;
 };
 
 

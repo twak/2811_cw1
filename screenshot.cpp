@@ -7,6 +7,15 @@
 #include <sys/stat.h>
 #include <fstream>
 #include <QApplication>
+#include <string>
+#include <sys/types.h>
+#include <iostream>
+
+#if defined(_WIN32)
+#include <direct.h>
+#endif
+
+using namespace std;
 
 // assessment class. do not edit.
 void Screenshot::doScreenshot() {
@@ -20,7 +29,7 @@ void Screenshot::doScreenshot() {
 
         QSize &size = remaining.back();
 
-        string s = "./report/images/rendered" +  to_string ( size.width() ) + "x" + to_string ( size.height() ) +".png";
+        string s = srcLocation + "/report/images/rendered" +  to_string ( size.width() ) + "x" + to_string ( size.height() ) +".png";
         QFile file( QString::fromStdString(s));
 
         file.open(QIODevice::WriteOnly);
@@ -30,35 +39,49 @@ void Screenshot::doScreenshot() {
     schedule();
 }
 
-// when we are shown for hte first time, set the screenshot sizes and call the scheduler
+void mkdir_ ( string sPath)  // https://stackoverflow.com/a/35109823/708802
+{
+    int nError = 0;
+    #if defined(_WIN32)
+      nError = _mkdir(sPath.c_str()); // can be used on Windows
+    #else
+      nError = mkdir(sPath.c_str(), S_IRWXU); // can be used on non-Windows
+    #endif
+    if (nError != 0) {
+      cout << "error creating directory "<< sPath <<". quitting.";
+      exit (-2);
+    }
+}
+
+// when we are shown for the first time, set the screenshot sizes and call the scheduler
 void Screenshot::showEvent(QShowEvent *) {
 
-    mkdir("./report", S_IRWXU);
-    mkdir("./report/images", S_IRWXU);
+    mkdir_( srcLocation + "/report");
+    mkdir_( srcLocation + "/report/images");
 
+    // tom may add additional sizes to this list when grading...
     remaining.push_back(QSize(300,300));
 
     remaining.push_back(QSize(568,320));
     remaining.push_back(QSize(320,568));
 
     remaining.push_back(QSize(812,375));
-    remaining.push_back(QSize(375,812));
+    remaining.push_back(QSize(375,720));
 
-    remaining.push_back(QSize(1024,1366));
-    remaining.push_back(QSize(1366,1024));
+    remaining.push_back(QSize(1024,600));
+    remaining.push_back(QSize(1280,720));
 
-    remaining.push_back(QSize(1920,1050));
-    remaining.push_back(QSize(1200,1050));
-    remaining.push_back(QSize(700 ,1050));
-    remaining.push_back(QSize(500 ,1050));
+    remaining.push_back(QSize(1280,720));
+    remaining.push_back(QSize(720 ,720));
+    remaining.push_back(QSize(500 ,720));
 
-    remaining.push_back(QSize(1920,300));
-    remaining.push_back(QSize(1920,800));
+    remaining.push_back(QSize(1280,300));
+    remaining.push_back(QSize(1280,720 ));
 
 
 
     ofstream html;
-    html.open("./report/index.html", fstream::in | fstream::out | fstream::app);
+    html.open( srcLocation + "/report/index.html", fstream::in | fstream::out | fstream::app);
 
     html << "</pre><h4>responsive layouts:</h4>" << endl;
 
