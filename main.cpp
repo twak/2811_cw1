@@ -14,14 +14,13 @@
 
 using namespace std;
 
-inline bool exists(const std::string& name) // https://stackoverflow.com/questions/12774207/fastest-way-to-check-if-a-file-exist-using-standard-c-c11-c
-{
+
+inline bool exists(const std::string& name) {  // https://stackoverflow.com/questions/12774207
     ifstream f(name.c_str());
     return f.good();
 }
 
-void pack(const string& srcLocation)
-{
+void pack(const string& srcLocation) {
     string username;
 
     if (!exists(srcLocation+"/report/index.html")) {
@@ -32,7 +31,8 @@ void pack(const string& srcLocation)
     string patchFile = srcLocation+"/../submit.patch";
 
     FolderCompressor fc(NULL);
-    bool success = fc.compressFolder( QString(srcLocation.c_str()), QString ( patchFile.c_str() ) );
+    bool success = fc.compressFolder( QString(srcLocation.c_str()),
+                                      QString ( patchFile.c_str() ) );
 
     if (!success)
         cout << "failed to write " << patchFile << endl;
@@ -40,8 +40,7 @@ void pack(const string& srcLocation)
         cout << "please submit: " << patchFile << endl;
 }
 
-void unpack (const string& srcLocation)
-{
+void unpack (const string& srcLocation) {
     string patchFile = srcLocation+"/../submit.patch";
     string tmpFile = srcLocation+"/../tmp_"+ to_string( std::time(0) )+"/";
 
@@ -60,7 +59,9 @@ int main(int argc, char *argv[]) {
     cout << "Qt version: " << QT_VERSION_STR << endl;
 
     // have you read the basic instructions?
-    string hints(" e.g \"/usr/home/twak/cw1\" or \"C:\\Users\\tom kelly\\Desktop\\responsive\". Include the quotes. Exclude final slash(\\ or /).\n\n\nquitting :(");
+    string hints(" e.g \"/usr/home/twak/cw1\" or \"C:\\Users\\tom kelly\\Desktop\\responsive\". ");
+    hints += "Include the quotes. Exclude final slash(\\ or /).\n\n\nquitting :(";
+
     if (argc < 2) {
         cout << "set command line argument to include location of this source." << hints << endl;
         exit(-1);
@@ -91,9 +92,7 @@ int main(int argc, char *argv[]) {
             unpack(srcLocation);
         else
             cout <<  "unknown command line argument: "<< arg <<endl;
-    }
-    else
-    { // run interactively
+    } else { // run interactively
         // create the Qt Application
         QApplication app(argc, argv);
         // interactive mode - run the regular superclass

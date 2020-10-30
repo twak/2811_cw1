@@ -29,7 +29,9 @@ void Screenshot::doScreenshot() {
 
         QSize &size = remaining.back();
 
-        string s = srcLocation + "/report/images/rendered" +  to_string ( size.width() ) + "x" + to_string ( size.height() ) +".png";
+        string s = srcLocation + "/report/images/rendered" +  to_string ( size.width() ) +
+                "x" + to_string ( size.height() ) +".png";
+
         QFile file( QString::fromStdString(s));
 
         file.open(QIODevice::WriteOnly);
@@ -39,8 +41,7 @@ void Screenshot::doScreenshot() {
     schedule();
 }
 
-void mkdir_ ( string sPath)  // https://stackoverflow.com/a/35109823/708802
-{
+void mkdir_ (string sPath) {  // https://stackoverflow.com/a/35109823/708802
     int nError = 0;
     #if defined(_WIN32)
       nError = _mkdir(sPath.c_str()); // can be used on Windows
@@ -86,7 +87,9 @@ void Screenshot::showEvent(QShowEvent *) {
     html << "</pre><h4>responsive layouts:</h4>" << endl;
 
     for (QSize size : remaining)
-        html << "<p><img width = \"300px\" src=\"" << "images/rendered" +  to_string ( size.width() ) + "x" + to_string ( size.height() ) +".png\"/><br/>" << size.width() << "x" << size.height() << "</p>" <<endl ;
+        html << "<p><img width = \"300px\" src=\"" << "images/rendered" +
+                to_string ( size.width() ) + "x" + to_string ( size.height() ) +
+                ".png\"/><br/>" << size.width() << "x" << size.height() << "</p>" <<endl ;
 
     html << "</body></html>" << endl;
 

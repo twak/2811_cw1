@@ -6,23 +6,19 @@
 #include "folder_compressor.h"
 #include <QDataStream>
 
-FolderCompressor::FolderCompressor(QObject *parent) :
-    QObject(parent)
-{
+FolderCompressor::FolderCompressor(QObject *parent) : QObject(parent) {
     dataStream.setVersion(QDataStream::Qt_4_0);
 }
 
-bool FolderCompressor::compressFolder(QString sourceFolder, QString destinationFile)
-{
+bool FolderCompressor::compressFolder(QString sourceFolder, QString destinationFile) {
+
     QDir src(sourceFolder);
-    if(!src.exists())//folder not found
-    {
+    if(!src.exists()) { //folder not found
         return false;
     }
 
     file.setFileName(destinationFile);
-    if(!file.open(QIODevice::WriteOnly))//could not open file
-    {
+    if(!file.open(QIODevice::WriteOnly)) { //could not open file
         return false;
     }
 
@@ -34,8 +30,8 @@ bool FolderCompressor::compressFolder(QString sourceFolder, QString destinationF
     return success;
 }
 
-bool FolderCompressor::compress(QString sourceFolder, QString prefex)
-{
+bool FolderCompressor::compress(QString sourceFolder, QString prefex) {
+
     QDir dir(sourceFolder);
     if(!dir.exists())
         return false;
@@ -45,8 +41,7 @@ bool FolderCompressor::compress(QString sourceFolder, QString prefex)
     QFileInfoList foldersList = dir.entryInfoList();
 
     //2 - For each folder in list: call the same function with folders' paths
-    for(int i=0; i<foldersList.length(); i++)
-    {
+    for(int i=0; i<foldersList.length(); i++) {
         QString folderName = foldersList.at(i).fileName();
         QString folderPath = dir.absolutePath()+"/"+folderName;
         QString newPrefex = prefex+"/"+folderName;
@@ -59,11 +54,9 @@ bool FolderCompressor::compress(QString sourceFolder, QString prefex)
     QFileInfoList filesList = dir.entryInfoList();
 
     //4- For each file in list: add file path and compressed binary data
-    for(int i=0; i<filesList.length(); i++)
-    {
+    for(int i=0; i<filesList.length(); i++) {
         QFile file(dir.absolutePath()+"/"+filesList.at(i).fileName());
-        if(!file.open(QIODevice::ReadOnly))//couldn't open file
-        {
+        if(!file.open(QIODevice::ReadOnly)) { //couldn't open file
             return false;
         }
 
@@ -76,17 +69,16 @@ bool FolderCompressor::compress(QString sourceFolder, QString prefex)
     return true;
 }
 
-bool FolderCompressor::decompressFolder(QString sourceFile, QString destinationFolder)
-{
+bool FolderCompressor::decompressFolder(QString sourceFile, QString destinationFolder) {
     //validation
     QFile src(sourceFile);
-    if(!src.exists())
-    {//file not found, to handle later
+    if(!src.exists()) {
+        //file not found, to handle later
         return false;
     }
     QDir dir;
-    if(!dir.mkpath(destinationFolder))
-    {//could not create folder
+    if(!dir.mkpath(destinationFolder)) {
+        //could not create folder
         return false;
     }
 
@@ -96,8 +88,7 @@ bool FolderCompressor::decompressFolder(QString sourceFile, QString destinationF
 
     dataStream.setDevice(&file);
 
-    while(!dataStream.atEnd())
-    {
+    while(!dataStream.atEnd()) {
         QString fileName;
         QByteArray data;
 
@@ -106,10 +97,8 @@ bool FolderCompressor::decompressFolder(QString sourceFile, QString destinationF
 
         //create any needed folder
         QString subfolder;
-        for(int i=fileName.length()-1; i>0; i--)
-        {
-            if((QString(fileName.at(i)) == QString("\\")) || (QString(fileName.at(i)) == QString("/")))
-            {
+        for(int i=fileName.length()-1; i>0; i--) {
+            if((QString(fileName.at(i)) == QString("\\")) || (QString(fileName.at(i)) == QString("/"))) {
                 subfolder = fileName.left(i);
                 dir.mkpath(destinationFolder+"/"+subfolder);
                 break;
@@ -117,8 +106,7 @@ bool FolderCompressor::decompressFolder(QString sourceFile, QString destinationF
         }
 
         QFile outFile(destinationFolder+"/"+fileName);
-        if(!outFile.open(QIODevice::WriteOnly))
-        {
+        if(!outFile.open(QIODevice::WriteOnly)) {
             file.close();
             return false;
         }

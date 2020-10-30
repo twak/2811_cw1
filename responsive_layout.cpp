@@ -31,7 +31,8 @@ void ResponsiveLayout::setGeometry(const QRect &r /* our layout should always fi
                 label -> setGeometry(r.width() - 65+r.x(),45+r.y(),60, 40);
             // fixme: focus group did not like this behaviour for the search result element.
             else if (label -> text() == kSearchResult )
-                label -> setGeometry(rand() %(r.width()-60)+r.x(),rand() %(r.height()-100)+40+r.y(), 60, 60);
+                label -> setGeometry(rand() %(r.width()-60)+r.x(),
+                                     rand() %(r.height()-100)+40+r.y(), 60, 60);
             else // otherwise: disappear label by moving out of bounds
                 label -> setGeometry (-1,-1,0,0);
         }

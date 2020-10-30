@@ -16,6 +16,7 @@ ResponsiveLabel::ResponsiveLabel(QString name, QString colour) : QLabel() {
     qc = qc.darker(150);
 
     // make a nice looking label for the layout
-    setStyleSheet("border: 1px solid "+ qc.name() +"; border-radius: 4px; background-color : "+colour+"; color : black;");
+    setStyleSheet("border: 1px solid "+ qc.name() +"; border-radius: 4px; background-color : "+
+                  colour+"; color : black;");
     setAlignment(Qt::AlignCenter);
 }

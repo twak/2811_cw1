@@ -11,8 +11,7 @@
 #include <QDir>
 #include <QDataStream>
 
-class FolderCompressor : public QObject
-{
+class FolderCompressor : public QObject {
     Q_OBJECT
 public:
     explicit FolderCompressor(QObject *parent = 0);

@@ -9,8 +9,7 @@
 #include <QList>
 #include <QLayout>
 
-class ResponsiveLayout : public QLayout
-{
+class ResponsiveLayout : public QLayout {
 public:
     ResponsiveLayout(): QLayout() {}
     ~ResponsiveLayout();
