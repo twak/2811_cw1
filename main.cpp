@@ -32,7 +32,7 @@ void pack(const string& srcLocation)
     string patchFile = srcLocation+"/../submit.patch";
 
     FolderCompressor fc(NULL);
-    boolean success = fc.compressFolder( QString(srcLocation.c_str()), QString ( patchFile.c_str() ) );
+    bool success = fc.compressFolder( QString(srcLocation.c_str()), QString ( patchFile.c_str() ) );
 
     if (!success)
         cout << "failed to write " << patchFile << endl;
@@ -46,7 +46,7 @@ void unpack (const string& srcLocation)
     string tmpFile = srcLocation+"/../tmp_"+ to_string( std::time(0) )+"/";
 
     FolderCompressor fc(NULL);
-    boolean success = fc.decompressFolder(QString ( patchFile.c_str() ), QString (tmpFile.c_str()) );
+    bool success = fc.decompressFolder(QString ( patchFile.c_str() ), QString (tmpFile.c_str()) );
 
     if (!success)
         cout << "failed to unpack " << patchFile << endl;

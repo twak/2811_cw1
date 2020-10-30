@@ -13,6 +13,7 @@ ResponsiveWindow::ResponsiveWindow() {
 
     setWindowTitle("2811: Coursework 1");
     setMinimumSize(320, 320);
+    setMaximumSize(1280, 720);
 
     createWidgets();
 }
