@@ -11,7 +11,6 @@
 #include "responsive_label.h"
 #include "responsive_window.h"
 
-// assessment class. do not edit.
 class Screenshot : public ResponsiveWindow {
     Q_OBJECT
 
