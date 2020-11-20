@@ -61,7 +61,7 @@ void Screenshot::showEvent(QShowEvent *) {
     mkdir_( srcLocation + "/report/images");
 
     // tom may add additional sizes to this list when grading...
-    remaining.push_back(QSize(300,300));
+    remaining.push_back(QSize(320,320));
 
     remaining.push_back(QSize(568,320));
     remaining.push_back(QSize(320,568));
