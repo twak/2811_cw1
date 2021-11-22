@@ -70,14 +70,13 @@ void Screenshot::showEvent(QShowEvent *) {
     remaining.push_back(QSize(375,720));
 
     remaining.push_back(QSize(1024,600));
-    remaining.push_back(QSize(1280,720));
 
     remaining.push_back(QSize(1280,720));
     remaining.push_back(QSize(720 ,720));
     remaining.push_back(QSize(500 ,720));
 
-    remaining.push_back(QSize(1280,300));
-    remaining.push_back(QSize(1280,720 ));
+    remaining.push_back(QSize(1280,320));
+    remaining.push_back(QSize(1280,720));
 
 
 
@@ -87,7 +86,7 @@ void Screenshot::showEvent(QShowEvent *) {
     html << "</pre><h4>responsive layouts:</h4>" << endl;
 
     for (QSize size : remaining)
-        html << "<p><img width = \"300px\" src=\"" << "images/rendered" +
+        html << "<p><img width = \"320px\" src=\"" << "images/rendered" +
                 to_string ( size.width() ) + "x" + to_string ( size.height() ) +
                 ".png\"/><br/>" << size.width() << "x" << size.height() << "</p>" <<endl ;
 
