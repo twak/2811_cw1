@@ -71,7 +71,6 @@ void Screenshot::showEvent(QShowEvent *) {
 
     remaining.push_back(QSize(1024,600));
 
-    remaining.push_back(QSize(1280,720));
     remaining.push_back(QSize(720 ,720));
     remaining.push_back(QSize(500 ,720));
 
