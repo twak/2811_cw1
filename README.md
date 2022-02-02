@@ -1,4 +1,4 @@
-# 2811 / User Interfaces corusework 1
+# 2811 / User Interfaces responsive coursework
 
 See description folder for details.
 
