@@ -10,7 +10,7 @@
 #include <QString>
 #include <map>
 
-using namespace std;
+//using namespace std;
 
 // Please add to, but DO NOT modify the existing constants in this file.
 // label names that are displayed
@@ -28,18 +28,18 @@ const QString
         kSearchOptions  = "search options";
 
 // every label name has a colour
-const map<QString, QString> kColours = {
-        make_pair(kHomeLink,       "#ffaaff"),
-        make_pair(kShoppingBasket, "#ffaaaa"),
-        make_pair(kSignIn,         "#aaffaa"),
-        make_pair(kNavTabs,        "#ffa9d3"),
-        make_pair(kAdvert,         "#ffaa66"),
-        make_pair(kSearchButton,   "#aaffff"),
-        make_pair(kSearchResult,   "#99ddff"),
-        make_pair(kSearchText,     "#aaaaff"),
-        make_pair(kSearchForward,  "#5caeff"),
-        make_pair(kSearchBackward, "#5caeff"),
-        make_pair(kSearchOptions,  "#9dceff")
+const std::map<QString, QString> kColours = {
+        std::make_pair(kHomeLink,       "#ffaaff"),
+        std::make_pair(kShoppingBasket, "#ffaaaa"),
+        std::make_pair(kSignIn,         "#aaffaa"),
+        std::make_pair(kNavTabs,        "#ffa9d3"),
+        std::make_pair(kAdvert,         "#ffaa66"),
+        std::make_pair(kSearchButton,   "#aaffff"),
+        std::make_pair(kSearchResult,   "#99ddff"),
+        std::make_pair(kSearchText,     "#aaaaff"),
+        std::make_pair(kSearchForward,  "#5caeff"),
+        std::make_pair(kSearchBackward, "#5caeff"),
+        std::make_pair(kSearchOptions,  "#9dceff")
     };
 
 class ResponsiveLabel : public QLabel {

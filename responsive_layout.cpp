@@ -6,7 +6,7 @@
 #include "responsive_label.h"
 #include <iostream>
 
-using namespace std;
+//using namespace std;
 
 // you should probably make extensive changes to this function
 void ResponsiveLayout::setGeometry(const QRect &r /* our layout should always fit inside r */ ) {
@@ -23,7 +23,7 @@ void ResponsiveLayout::setGeometry(const QRect &r /* our layout should always fi
             ResponsiveLabel *label = static_cast<ResponsiveLabel *>(o->widget());
 
             if (label == NULL) // null: cast failed on pointer
-                cout << "warning, unknown widget class in layout" << endl;
+                std::cout << "warning, unknown widget class in layout" << std::endl;
             else if (label -> text() == kNavTabs ) // headers go at the top
                 label -> setGeometry(0+r.x(),0+r.y(),r.width(), 40);
             // only show a search button on small resolution, at the right of the window
@@ -37,9 +37,9 @@ void ResponsiveLayout::setGeometry(const QRect &r /* our layout should always fi
                 label -> setGeometry (-1,-1,0,0);
 
         }
-        catch (bad_cast) {
+        catch (std::bad_cast) {
             // bad_case: cast failed on reference...
-            cout << "warning, unknown widget class in layout" << endl;
+            std::cout << "warning, unknown widget class in layout" << std::endl;
         }
     }
 }

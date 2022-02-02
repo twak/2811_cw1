@@ -15,7 +15,7 @@ class Screenshot : public ResponsiveWindow {
     Q_OBJECT
 
 public:
-    Screenshot(string srcLocation) : srcLocation(srcLocation) {};
+    Screenshot(std::string srcLocation) : srcLocation(srcLocation) {};
 
 public slots:
     void doScreenshot();
@@ -23,9 +23,9 @@ public slots:
 private:
     void showEvent(QShowEvent *);
     void schedule();
-    vector<QSize> remaining;
+    std::vector<QSize> remaining;
     QTimer* mTimer;
-    const string srcLocation;
+    const std::string srcLocation;
 };
 
 

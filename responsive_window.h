@@ -7,7 +7,7 @@
 
 #include <QWidget>
 
-using namespace std;
+//using namespace std;
 
 class ResponsiveWindow: public QWidget {
 
